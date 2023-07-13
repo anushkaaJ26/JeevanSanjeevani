@@ -1,0 +1,335 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Jeevan Sanjeevani</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'images/icon.png' %}">
+
+        <!-- CSS FILES -->
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+        <link href="{% static 'css/aos.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/templatemo-nomad-force.css' %}" rel="stylesheet">
+<!--
+
+TemplateMo 567 Nomad Force
+
+https://templatemo.com/tm-567-nomad-force
+
+-->
+    </head>
+    
+    <body>
+    
+        <main>
+
+            <section class="hero" id="hero">
+                <div class="heroText">
+                    {% comment %} <i class="bi-geo-alt-fill me-1 mb-2 mb-lg-0"></i> {% endcomment %}
+                    <h1 class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800">
+                        Jeevan Sanjeevani
+                    </h1>
+
+                    <p class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">
+                        Road Accident Detection and Safety Operations Management <a class="custom-underline" href="{% url 'signin' %}"><strong>System</strong></a>
+                    </p>
+                </div>
+
+                <div class="videoWrapper">
+                    <video autoplay="" loop="" muted="" class="custom-video" poster="{% static 'videos/accident1.jpg' %}">
+                        <source src="{% static 'videos/video1.mp4' %}" type="video/mp4">
+
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="overlay"></div>
+            </section>
+
+            <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <strong>Jeevan Sanjeevani</strong>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav  ms-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#hero">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Our System</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#events">Gallery & Events</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="section-padding pb-0 mt-0 pt-3" id="about">
+                <div class="container mb-5 pb-lg-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="mb-3" data-aos="fade-up">Jeevan Sanjeevani</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-3 mb-lg-5">
+                            <p class="me-4" data-aos="fade-up" data-aos-delay="300">Road Accident Detection and Safety Operations Management System <br><br>Helps individuals get required Medical Aid and others Support in Time.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
+                            <p data-aos="fade-up" data-aos-delay="500">Road accidents rates are very high nowadays. Timely medical aid can help in saving lives. This 
+                                system aims to alert the nearby medical center about the accident to provide immediate medical 
+                                aid and the Police Stations to buckle up the process of formalities that has to be followed before 
+                                treating the victim.</p>
+                        </div>
+                    </div>
+                    <a data-aos="fade-up" data-aos-delay="500" class="inline-flex text-white bg-yellow-600 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-700 rounded text-lg" href="{% url 'signin' %}"><button>Get Started</button></a>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3 col-12 p-0">      
+                            <img src="{% static 'images/call.jpg' %}" class="img-fluid about-image" alt="">
+                        </div>
+
+                        <div class="col-lg-3 col-12 bg-dark">  
+                            <div class="d-flex flex-column flex-wrap justify-content-center h-100 py-5 px-4 pt-lg-4 pb-lg-0">
+                                <h3 class="text-white mb-3" data-aos="fade-up">Faster</h3>
+
+                                <p class="text-secondary-white-color" data-aos="fade-up">Time for saving ones life will be reduced to half of 
+                                    the time by providing immediate medical 
+                                    aid with time, location, and district of the 
+                                    Accident</p>
+
+                                <div class="mt-3 custom-links">
+                                    <a href="#events" class="text-white custom-link" data-aos="zoom-in" data-aos-delay="100">See Gallery & Read Events</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-12 bg-dark">  
+                            <div class="d-flex flex-column flex-wrap justify-content-center h-100 py-5 px-4 pt-lg-4 pb-lg-0">
+                                <h3 class="text-white mb-3" data-aos="fade-up">On-Site Services</h3>
+
+                                <p class="text-secondary-white-color" data-aos="fade-up">Sends the accident information via call and 
+                                    message to the smartphone, of the hospitals or the ambulance handlers as well as the Police 
+                                    Stations</p>
+
+                                <div class="mt-3 custom-links">
+                                    <a href="#contact" class="text-white custom-link" data-aos="zoom-in" data-aos-delay="300">Contact Us</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-12 p-0">      
+                            <img src="{% static 'images/services.jpg' %}" class="img-fluid about-image" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news section-padding" id="events">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h2 class="mb-5 text-center" data-aos="fade-up">Gallery & Events</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div class="news-thumb" data-aos="fade-up">
+                                <a href="#" class="news-image-hover news-image-hover-warning">
+                                    <img src="{% static 'images/gallery/dr.png' %}" class="img-fluid large-news-image news-image" alt="">
+                                </a>
+
+                                <div class="news-category bg-warning text-white">Gallery</div>
+                                
+                                <div class="news-text-info">
+                                    <h5 class="news-title">
+                                        <a href="#" class="news-title-link">Dr. Sanjeev Kulkarni</a>
+                                    </h5>
+
+                                    <span class="text-muted">M. S. MCH. Neurosurgeon, India</span>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
+                                <div class="news-top w-100">
+                                    
+                                    <a href="#" class="news-image-hover news-image-hover-primary">
+                                        <img src="{% static 'images/gallery/police.jpeg' %}" class="img-fluid news-image" alt="">
+                                    </a>
+
+                                    <div class="news-category bg-primary text-white">Events</div>
+                                </div>
+                                
+                                <div class="news-bottom w-100">
+                                    <div class="news-text-info">
+                                        <h5 class="news-title">
+                                            <a href="#" class="news-title-link">P.S. Officer Sikandar Vardhan</a>
+                                        </h5>
+
+                                        <span class="text-muted">India, Sangli</span>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
+                                <div class="news-top w-100" data-aos="fade-up">
+                                    
+                                    <a href="#" class="news-image-hover news-image-hover-success">
+                                        <img src="{% static 'images/gallery/traffic.png' %}" class="img-fluid news-image" alt="">
+                                    </a>
+
+                                    <div class="news-category bg-success text-white">Gallery</div>
+                                </div>
+                                
+                                <div class="news-bottom w-100">
+                                    <div class="news-text-info">
+                                        <h5 class="news-title">
+                                            <a href="#" class="news-title-link">Tested and Verified by Traffic Branch Head, Sangli</a>
+                                        </h5>
+
+                                        <span class="text-muted">India, Sangli</span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class=" contact section-padding" id="contact">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-7 col-12 mx-auto">
+
+                            <h2 class="mb-4 text-center" data-aos="fade-up">Write to us</h2>
+
+                            <form action="#" method="post" class="contact-form" role="form" data-aos="fade-up">
+
+                                <div class="row">
+                                    
+                                    <div class="col-lg-6 col-6">
+                                        <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6">
+                                        <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
+
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                                    </div>
+
+                                    <div class="col-12 my-4">
+                                        <label for="message" class="form-label">Message</label>
+
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Tell us about the project" required></textarea>
+                                        
+                                    </div>
+
+                                <div class="col-lg-5 col-12 mx-auto mt-5">
+                                    <button type="submit" class="form-control">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {% comment %} <section class="google-map">
+                <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" class="map-iframe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section> {% endcomment %}
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h5 class="text-white">
+                            <i class="bi-geo-alt-fill me-2"></i>
+                            Walchand College of Engineering, Sangli
+                        </h5>
+
+                        <a href="mailto:info@company.com" class="custom-link mt-3 mb-5">
+                            jeevansanjeevani@walchandsangli.ac.in
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <p class="copyright-text mb-0">© Designed and developed by Parshwa Shah, Anushka Jadhav, Utkarsha Sutar</p>
+                        <p class="copyright-text mb-0">Copyright © 2023 All rights reserved</p>
+                    
+                    </div>
+
+                    <div class="col-lg-3 col-5 ms-auto">
+                        <ul class="social-icon">
+                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/jquery.sticky.js' %}"></script>
+        <script src="{% static 'js/aos.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'js/magnific-popup-options.js' %}"></script>
+        <script src="{% static 'js/scrollspy.min.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+
+    </body>
+</html>

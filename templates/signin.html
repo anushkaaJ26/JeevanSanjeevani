@@ -1,0 +1,159 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Jeevan Sanjeevani</title>
+
+        <!-- CSS FILES -->
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    
+<!--
+
+TemplateMo 567 Nomad Force
+
+https://templatemo.com/tm-567-nomad-force
+
+-->
+    </head>
+    
+    <body>
+    
+        <main>
+            <div id="container" class="container">
+                <!-- FORM SECTION -->
+                <div class="row">
+                    <!-- SIGN UP -->
+
+                    <div class="col align-items-center flex-col sign-up">
+                        <form action="" method="post">
+                        {% csrf_token %}
+                        <div class="form-wrapper align-items-center">
+                            <div class="form sign-up">
+                                <div class="input-group">
+                                    <i class='bx bxs-user'></i>
+                                    <input type="text" placeholder="Username" required name="uname">
+                                </div>
+                                <div class="input-group">
+                                    <i class='bx bx-mail-send'></i>
+                                    <input type="email" placeholder="Email" required name="email">
+                                </div>
+                                <div class="input-group">
+                                    <i class='bx bx-mail-send'></i>
+                                    <input type="text" placeholder="Contact No" required name="contact">
+                                </div>
+                                <div class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
+                                    <i class='bx bx-mail-send'></i>
+                                    <select required name="user-mode">
+                                      <option>Police</option>
+                                      <option>Hospital</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <i class='bx bx-mail-send'></i>
+                                    <input type="text" placeholder="Unique Code" required name="uID">
+                                </div>
+                                <div class="input-group">
+                                    <i class='bx bx-mail-send'></i>
+                                    <input type="text" placeholder="Address" required name="address">
+                                </div>
+                                <div class="input-group">
+                                    <i class='bx bxs-lock-alt'></i>
+                                    <input type="password" placeholder="Password" required name="p1">
+                                </div>
+                                <div class="input-group">
+                                    <i class='bx bxs-lock-alt'></i>
+                                    <input type="password" placeholder="Confirm password" required name="p2">
+                                </div>
+                                <button type = "submit">Sign Up</button>
+                                <p>
+                                    <span>
+                                        Already have an account?
+                                    </span>
+                                    <b onclick="toggle()" class="pointer">
+                                        Sign in here
+                                    </b>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <!-- END SIGN UP -->
+                    <!-- SIGN IN -->
+                    <div class="col align-items-center flex-col sign-in">
+                        <form action="" method="post">
+                        {% csrf_token %}
+                        <div class="form-wrapper align-items-center">
+                            <div class="form sign-in">
+                                <div class="input-group">
+                                    <i class='bx bxs-user'></i>
+                                    <input type="text" placeholder="Username" required name="uname_L">
+                                </div>
+                                <div class="input-group">
+                                    <i class='bx bxs-lock-alt'></i>
+                                    <input type="password" placeholder="Password" required name="p1_L">
+                                </div>
+                                {% comment %} <a data-aos="fade-up" data-aos-delay="500" class="inline-flex text-white bg-yellow-600 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-700 rounded text-lg" href="{% url 'signin' %}"> {% endcomment %}
+                                    <button type = "submit">Sign in</button>
+                                <p>
+                                    <span>
+                                        Don't have an account?
+                                    </span>
+                                    <b onclick="toggle()" class="pointer">
+                                        Sign up here
+                                    </b>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="form-wrapper">
+                
+                        </div>
+                        </form>
+                    </div>
+                    <!-- END SIGN IN -->
+                </div>
+                <!-- END FORM SECTION -->
+                <!-- CONTENT SECTION -->
+                <div class="row content-row">
+                    <!-- SIGN IN CONTENT -->
+                    <div class="col align-items-center flex-col">
+                        <div class="text sign-in">
+                            <h2>
+                                Welcome
+                            </h2>
+            
+                        </div>
+                        <div class="img sign-in">
+                           
+                        </div>
+                    </div>
+                    <!-- END SIGN IN CONTENT -->
+                    <!-- SIGN UP CONTENT -->
+                    <div class="col align-items-center flex-col">
+                        <div class="img sign-up">
+                        
+                        </div>
+                        <div class="text sign-up">
+                            <h2>
+                                Join with us
+                            </h2>
+            
+                        </div>
+                    </div>
+                    <!-- END SIGN UP CONTENT -->
+                </div>
+                <!-- END CONTENT SECTION -->
+            </div>
+        </main>
+        <script src="{% static 'js/signin.js' %}"></script>
+    </body>
+</html>
